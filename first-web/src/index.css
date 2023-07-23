@@ -4,7 +4,8 @@
 * {
     margin: 0;
     font-family: "Quicksand";
-    color: #333;
+    color: #320E3B;
+    background-color: #F2F6FF;
 }
 .navbar {
     padding: 20px;
@@ -12,10 +13,10 @@
     align-items: center;
     max-width: 600px;
     margin: 0 auto;
-    border-bottom: 1px solid #f2f2f2;
+    border-bottom: 1px solid #c7cedf;
 }
 .navbar h1 {
-    color: #f1356d;
+    color: #6B7FD7;
 }
 .navbar .links {
     margin-left: auto;
@@ -26,7 +27,7 @@
     padding: 6px;
 }
 .navbar a:hover {
-    color: #f1356d;
+    color: #6B7FD7;
 }
 .content {
     max-width: 600px;
@@ -37,14 +38,24 @@
 /* blog previews / list */
 .blog-preview {
     padding: 10px 16px;
-    margin: 20px 0;
-    border-bottom: 1px solid #fafafa
+    margin: 20px;
+    border-bottom: 1px solid #F2F6FF
 }
 .blog-preview:hover {
     box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
 }
 .blog-preview h2 {
     font-size: 20px;
-    color: #f1356d;
+    color: #6B7FD7;
     margin-bottom: 8px;
+}
+
+/* Delete blog button */
+.delete-blog {
+    background-color: #F2F6FF;
+    border: 0px solid #eb416b;
+    color: #eb416b;
+    padding: 1px 1px;
+    border-radius: 16px;
+    cursor: pointer;
 }
