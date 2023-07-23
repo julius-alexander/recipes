@@ -37,17 +37,22 @@
 
 /* blog previews / list */
 .blog-preview {
-    padding: 10px 16px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
     border-bottom: 1px solid #F2F6FF
 }
 .blog-preview:hover {
     box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+    border-radius: 16px;
 }
 .blog-preview h2 {
     font-size: 20px;
     color: #6B7FD7;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
+}
+.blog-list {
+    margin: 20px;
+    padding: 10px;
 }
 
 /* Delete blog button */
