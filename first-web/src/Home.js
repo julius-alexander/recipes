@@ -20,8 +20,6 @@ const Home = () => {
     return (
         <div className="home">
             <BlogList blogs={ blogs } title="All Blogs" handleDelete={ handleDelete }/>
-            <BlogList blogs={ blogs.filter((blog) => blog.author === "Mario" ) } title="Mario's Blogs" handleDelete={ handleDelete }/>
-            <BlogList blogs={ blogs.filter((blog) => blog.author === "Yoshi" ) } title="Yoshi's Blogs" handleDelete={ handleDelete }/>
         </div>
     );
 }

@@ -25,6 +25,7 @@
     margin-left: 16px;
     text-decoration: none;
     padding: 6px;
+    font-weight: 700;
 }
 .navbar a:hover {
     color: #6B7FD7;
@@ -63,4 +64,7 @@
     padding: 1px 1px;
     border-radius: 16px;
     cursor: pointer;
+}
+.delete-blog:hover {
+    color: #880d2c;
 }
