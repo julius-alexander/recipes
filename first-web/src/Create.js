@@ -1,10 +1,16 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Create = () => {
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('Mario');
     const [isPending, setIsPending] = useState(false);
+    const navigate = useNavigate();
+
+    const sendSubmit = () => {
+        navigate('/');
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -17,8 +23,8 @@ const Create = () => {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(blog)
         }).then(() => {
-            console.log('new blog added');
             setIsPending(false);
+            sendSubmit();
         })
     };
 
@@ -37,9 +43,6 @@ const Create = () => {
                 </select>
                 { !isPending && <button>Add Blog</button>}
                 { isPending && <button disabled>Adding Blog...</button>}
-                <p>{title}</p>
-                <p>{body}</p>
-                <p>{author}</p>
             </form>
         </div>
     );
