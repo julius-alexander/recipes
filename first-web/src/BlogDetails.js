@@ -8,15 +8,25 @@ const BlogDetails = () => {
 
     const navigate = useNavigate();
 
-    const sendDelete = () => {
+    const sendClick = () => {
         navigate('/');
     }
 
-    const handleClick = () => {
+    const handleDelete = () => {
         fetch('http://localhost:8000/blogs/' + blog.id, {
             method: 'DELETE'
         }).then(() => {
-            sendDelete();
+            sendClick();
+        })
+    };
+
+    const handleSave = () => {
+        fetch('http://localhost:8000/blogs/' + blog.id, {
+            method: 'PUT',
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(blog)
+        }).then(() => {
+            sendClick();
         })
     };
 
@@ -28,8 +38,9 @@ const BlogDetails = () => {
                 <article>
                     <h2>{ blog.title }</h2>
                     <p>Written by { blog.author }</p>
-                    <div>{ blog.body }</div>
-                    <button className="delete" onClick={handleClick}>Delete</button>
+                    <div contentEditable>{ blog.body }</div>
+                    <button className="delete" onClick={handleDelete}>Delete</button>
+                    <button className="save" onClick={handleSave}>Save</button>
                 </article>
             )}
         </div>

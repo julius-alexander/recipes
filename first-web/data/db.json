@@ -11,6 +11,12 @@
       "body": "I need to continue my work on learning the MERN stack.  I am becoming slowly more comfortable with React, and my next step is likely working with MongoDB.\n\nAfter Mongo, I should work with Express.js.  This would pretty much complete my introduction to the MERN stack...\n\nAdditionally, I have been thinking of branching this site off to repurpose it into a recipe site.  This would allow for more practice with React. I'm not sure if I should stop using create-react-app btw... I've heard that \"you shouldn't use it\" but I really don't see why not... Anyway... That's all for now",
       "author": "Whitebeard",
       "id": 9
+    },
+    {
+      "title": "This is ",
+      "body": "Editable?",
+      "author": "Mario",
+      "id": 10
     }
   ]
 }
