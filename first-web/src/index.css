@@ -4,8 +4,8 @@
 * {
     margin: 0;
     font-family: "Quicksand";
-    color: #320E3B;
-    background-color: #F2F6FF;
+    color: #433E3F;
+    background-color: #f4e9e2;
 }
 .navbar {
     padding: 20px;
@@ -13,10 +13,10 @@
     align-items: center;
     max-width: 600px;
     margin: 0 auto;
-    border-bottom: 1px solid #c7cedf;
+    border-bottom: 1px solid #dbcfc7;
 }
 .navbar h1 {
-    color: #6B7FD7;
+    color: #8E6E53;
 }
 .navbar .links {
     margin-left: auto;
@@ -28,7 +28,7 @@
     font-weight: 700;
 }
 .navbar a:hover {
-    color: #6B7FD7;
+    color: #8E6E53;
 }
 .content {
     max-width: 700px;
@@ -40,7 +40,7 @@
 .blog-preview {
     padding: 10px;
     margin: 10px;
-    border-bottom: 1px solid #F2F6FF
+    border-bottom: 1px solid #f4e9e2
 }
 .blog-preview:hover {
     box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
@@ -48,7 +48,7 @@
 }
 .blog-preview h2 {
     font-size: 20px;
-    color: #6B7FD7;
+    color: #8E6E53;
     margin-bottom: 4px;
 }
 .blog-list {
@@ -70,7 +70,7 @@
 }
 .blog-details h2 {
     font-size: 36px;
-    color: #6B7FD7;
+    color: #8E6E53;
     margin-bottom: 4px;
 }
 .blog-details p {
