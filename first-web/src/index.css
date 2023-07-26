@@ -125,4 +125,26 @@
     border-radius: 8px;
     cursor: pointer;
     margin-top: 40px;
+    font-weight: 700;
+    width: 60px;
+}
+.delete:hover {
+    background: #d42c5f;
+}
+
+/* Save button */
+.save {
+    background: #6bd772;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 40px;
+    font-weight: 700;
+    width: 60px;
+    float: right;
+}
+.save:hover {
+    background: #59b45f;
 }

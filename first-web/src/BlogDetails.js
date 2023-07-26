@@ -38,7 +38,7 @@ const BlogDetails = () => {
                 <article>
                     <h2>{ blog.title }</h2>
                     <p>Written by { blog.author }</p>
-                    <div contentEditable>{ blog.body }</div>
+                    <div>{ blog.body }</div>
                     <button className="delete" onClick={handleDelete}>Delete</button>
                     <button className="save" onClick={handleSave}>Save</button>
                 </article>
